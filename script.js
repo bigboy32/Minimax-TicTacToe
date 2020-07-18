@@ -1,4 +1,3 @@
-
 var origBoard;
 const huPlayer = 'X';
 const aiPlayer = 'O';
@@ -80,7 +79,7 @@ function bestSpot() {
 function checkTie() {
 	if (emptySquares().length == 0) {
 		for (var i = 0; i < cells.length; i++) {
-			cells[i].style.backgroundColor = "lightblue";
+			cells[i].style.backgroundColor = "lightgrey";
 			cells[i].removeEventListener('click', turnClick, false);
 		}
 		declareWinner("Tie Game!")
